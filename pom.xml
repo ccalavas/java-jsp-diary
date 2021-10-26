@@ -55,6 +55,18 @@
       		<version>3.8.1</version>
 	    </plugin>
 	    <plugin>
+      		<groupId>com.contrastsecurity</groupId>
+      		<artifactId>contrast-maven-plugin</artifactId>
+      			<configuration>
+        			<userName>ccalavas@merlincyber.com</userName>
+				<serverName>https://eval.contrastsecurity.com/Contrast</serverName>
+        			<apiKey>Q16xhIrA8gmCYw62F7gOK0tDCqi5ebfD</apiKey>
+        			<serviceKey>8VFU2LCAWKPFCR5D</serviceKey>
+        			<orgUuid>330533d7-3ce8-4c8e-8dd2-d803748abbf0</orgUuid>
+				<appName>java-jsp-diary</appName>
+      			</configuration>
+    	    </plugin>
+	    <plugin>
     		<groupId>org.apache.tomcat.maven</groupId>
     		<artifactId>tomcat7-maven-plugin</artifactId>
     		<version>2.2</version>
@@ -64,6 +76,11 @@
         		<path>/myapp</path>
     			</configuration>
 	    </plugin>
+	    <plugin>
+        	<groupId>com.contrastsecurity</groupId>
+        	<artifactId>contrast-maven-plugin</artifactId>
+        	<version>2.13.1</version>
+           </plugin>
         </plugins>
     </build>
 
